@@ -1,0 +1,35 @@
+# Eval seti — PLACEHOLDER
+# TODO: 100+ vakaya genişletilecek (Faz 3).
+#
+# Format:
+#   - id: tek bir vakanın benzersiz kimliği
+#     description: serbest metin (gerçek hasta vakası DEĞİL — sentetik)
+#     input_text: kullanıcı mesajı (Türkçe)
+#     expected_color: KIRMIZI | SARI | YESIL
+#     expected_red_flags: [pattern_id, ...]   # boş liste de olabilir
+#     notes: ek açıklama (opsiyonel)
+version: "0.1.0-placeholder"
+cases:
+  - id: CASE-001
+    description: "Klasik kardiyak şüphesi (placeholder)"
+    input_text: "Göğsümde sıkışma var, ağrı sol koluma yayılıyor. 50 yaşındayım."
+    expected_color: KIRMIZI
+    expected_red_flags: ["RF-CARDIAC-01"]
+
+  - id: CASE-002
+    description: "İnme şüphesi (placeholder)"
+    input_text: "Aniden konuşmam bozuldu, yüzümün bir tarafı düşmüş gibi."
+    expected_color: KIRMIZI
+    expected_red_flags: ["RF-NEURO-01"]
+
+  - id: CASE-003
+    description: "Hafif viral şikayet (placeholder)"
+    input_text: "Boğazım ağrıyor, biraz da burun akıntım var."
+    expected_color: YESIL
+    expected_red_flags: []
+
+  - id: CASE-004
+    description: "Karın ağrısı + kusma (placeholder)"
+    input_text: "Karnım ağrıyor ve sabahtan beri kusuyorum."
+    expected_color: SARI
+    expected_red_flags: []
